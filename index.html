@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+    <link rel="stylesheet" href="Assets/fontawesome-free/css/all.min.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator-container">
+        <div class="display-row">
+          <a class="show" id="showHistory"
+            ><i class="ph ph-clock-counter-clockwise"></i
+          ></a>
+          <p class="userInput" id="userInput">0</p>
+          <p class="inputAnswer" id="inputAnswer">0</p>
+        </div>
+        <div class="button-row">
+          <button id="clear">AC</button>
+          <button class="operator">%</button>
+          <button id="delete">DEL</button>
+          <button class="operator">÷</button>
+        </div>
+        <div class="button-row">
+          <button class="number" id="seven">7</button>
+          <button class="number" id="eight">8</button>
+          <button class="number" id="nine">9</button>
+          <button class="operator">*</button>
+        </div>
+        <div class="button-row">
+          <button class="number" id="four">4</button>
+          <button class="number" id="five">5</button>
+          <button class="number" id="six">6</button>
+          <button class="operator">-</button>
+        </div>
+        <div class="button-row">
+          <button class="number" id="one">1</button>
+          <button class="number" id="two">2</button>
+          <button class="number" id="three">3</button>
+          <button class="operator">+</button>
+        </div>
+        <div class="button-row">
+          <button class="number" id="doubleZero">00</button>
+          <button class="number" id="zero">0</button>
+          <button class="number" id="decimal">.</button>
+          <button id="calculate">=</button>
+        </div>
+      </div>
+      <div class="history">
+        <p>History:</p>
+        <ul></ul>
+      </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="Assets/main.js"></script>
+  </body>
+</html>
