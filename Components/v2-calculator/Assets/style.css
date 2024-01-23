@@ -32,6 +32,7 @@ h1 {
 
 .calculator-container {
     flex: 1;
+   
     box-sizing: border-box;
     border: 2px solid;
     padding: 25px;
@@ -51,14 +52,18 @@ h1 {
     cursor: pointer;
 }
 .calculator-container .number:hover{
-    background-color: #979797;
-    
+  background-color: #979797;
+  
+}
+#special-func:hover{
+  background-color: #c7c6c6;
+
 }
 .calculator-container button:hover {
     background-color:#ffc366;
 }
-
 .display-row {
+  
     height: 90px;
     max-height: 130px;
     text-align: right;
@@ -78,6 +83,17 @@ h1 {
 
 .display-row .inputAnswer {
     font-size: 40px;
+}
+#special-func{
+  width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    font-size: 25px;
+    margin: 3px;
+    color: rgb(0, 0, 0);
+    background-color: #dad9d8;
+    border: none;
+    cursor: pointer;
 }
 
 .calculator-container .number {
@@ -134,17 +150,6 @@ h1 {
 .darkMode{
     background: black;
     color: white;
-}
-#calculate{
-    width: 140px;
-    height: 70px;
-    border-radius: 50%;
-    font-size: 25px;
-    margin: 3px;
-    color: rgb(255, 255, 255);
-    background-color: #fe9e09;
-    border: none;
-    cursor: pointer;
 }
 /* navbar */
 nav {
@@ -223,7 +228,7 @@ nav {
 
 /* MOBILE screen */
 @media only screen and (max-width:768px){
-    .calculator-container button{
+    .calculator-container button, #special-func{
         width: 50px;
         height: 50px;
         font-size: 18px;
