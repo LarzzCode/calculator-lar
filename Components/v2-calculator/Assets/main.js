@@ -110,6 +110,18 @@ function performCalculation() {
       case "%":
         result = (operand1 / 100) * (1), parseFloat(inputValue);
         break;
+      case 'sin':
+        result = Math.sin((operand1 * Math.PI/180), parseFloat(inputValue))
+        break;
+      case 'cos':
+        result = Math.cos((operand1 * Math.PI/180), parseFloat(inputValue))
+        break;
+      case 'tan':
+        result = Math.tan((operand1 * Math.PI/180), parseFloat(inputValue))
+        break;
+      case 'log':
+        result = Math.log((operand1 * Math.PI/180), parseFloat(inputValue))
+        break;
       default:
         break;
     }
@@ -117,7 +129,7 @@ function performCalculation() {
     if (result % 1 === 0) {
       inputAnswer.textContent = result.toFixed(0);
     } else {
-      inputAnswer.textContent = result.toFixed(2);
+      inputAnswer.textContent = result.toFixed(11);
     }
 
     userInput.textContent = operand1 + " " + operator + " " + inputValue + " = ";
@@ -139,7 +151,7 @@ operators.forEach(operatorButton => {
     userInput.textContent = operand1 + " " + operator;
     inputAnswer.textContent = "0";
   });
- 
+
 
 });
 
@@ -147,7 +159,6 @@ document
   .getElementById("calculate")
   .addEventListener("click", performCalculation);
   
-
 // navbar
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
@@ -155,6 +166,7 @@ const menuList = document.getElementById("menu-list");
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
 });
+
   // mode 
   const body = document.body
   const icon = document.getElementById('icon')

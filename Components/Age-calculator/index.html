@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <link rel="stylesheet" href="Assets/style.css" />
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="input-box">
+          <input type="date" id="date" />
+          <button onclick="calculate()">calculate</button>
+        </div>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <!-- nav bar  -->
+    <nav>
+      <div class="menu-title">
+        <h3>L C</h3>
+      </div>
+      <div id="menu-icon" class="menu-icon">
+        <i class="ph ph-list"></i>
+      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="../v1-calculator/index.html">V1 Calculator</a>
+        </li>
+        <li>
+          <a href="../v2-calculator/index.html">V2 Calculator</a>
+        </li>
+        <li>
+          <a href="index.html" class="active">Age Calculator</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- mode -->
+    <div class="mode">
+      <button id="darkMode">
+        <img id="icon" src="Assets/icons/moon.svg" alt="moon/sun" />
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="Assets/main.js"></script>
+  </body>
+</html>

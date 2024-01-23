@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;
+}
+.calculator p{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+  background-color: rgba(255,255,255,0.3);
+  padding: 2em;
+  border-radius: 10px;
+}
+.input-box{
+    display: flex;
+    align-items: center;
+}
+.input-box input{
+    flex: 5;
+    margin-right: 20px;
+    padding: 14px 50px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.input-box button{
+    flex: 1;
+    padding: 14px 10px;
+    background-color: #ffff76;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s;
+    border-radius: 5px;
+    position: relative;
+}
+.input-box button:hover{
+  background-color: #ffff7694;
+}
+/* navbar */
+nav {
+  background-color: rgba(255,255,255,0.3);
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    justify-content: space-around;    
+  }
+
+  .active{
+    color: #ffff76;
+  }
+  nav ul {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    list-style: none;
+  }
+  
+  nav div img {
+    width: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    color: #fff;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 3px solid rgba(255, 68, 0, 0);
+  }
+  
+  nav ul li a:hover {
+    color: #ffff76;
+    border-bottom: 3px solid #ffff76;
+  }
+  
+  .menu-icon {
+    /* background-color: tomato; */
+    font-size: 28px;
+    display: none;
+    color: #fff;
+  }
+  .menu-title{
+    color: #fff;
+  }
+  .mode{
+    position: fixed;
+    z-index: 999999;
+    top: 17px;
+    right: 15px;
+}
+.mode button{
+    background: transparent;
+    border: none;
+}
+.mode button img{
+    height: 30px;
+}
+/* MODE  */
+.darkMode{
+    background: black;
+    color: white;
+}
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li:last-of-type {
+      padding-bottom: 8px;
+    }
+  
+    nav ul.hidden {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: flex;
+      align-items: center;
+    }
+  }

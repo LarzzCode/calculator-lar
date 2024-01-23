@@ -119,7 +119,7 @@ h1 {
 }
 .mode{
     position: fixed;
-    z-index: 999999;
+    z-index: 99999;
     top: 17px;
     right: 15px;
 }
@@ -135,7 +135,6 @@ h1 {
     background: black;
     color: white;
 }
-
 /* navbar */
 nav {
   background-color: rgba(255,255,255,0.3);
@@ -156,9 +155,6 @@ nav {
     padding: 1rem;
     list-style: none;
   }
-  .menu-title{
-    color: #fff;
-  }
   
   nav ul li a {
     text-decoration: none;
@@ -169,20 +165,21 @@ nav {
     transition-duration: 300ms;
     border-bottom: 3px solid rgba(255, 68, 0, 0);
   }
-  
+  .active{
+    color: #ffff76;
+  }
   nav ul li a:hover {
     color: #ffff76;
     border-bottom: 3px solid #ffff76;
   }
-  .active{
-    color: #ffff76;
+  .menu-title{
+    color: #fff;
   }
-  
   .menu-icon {
     /* background-color: tomato; */
-    color: white;
     font-size: 28px;
     display: none;
+    color: #fff;
   }
   
   @media only screen and (max-width: 768px) {
@@ -212,6 +209,7 @@ nav {
       align-items: center;
     }
   }
+
 
 /* MOBILE screen */
 @media only screen and (max-width:768px){

@@ -147,14 +147,15 @@ document
   .getElementById("calculate")
   .addEventListener("click", performCalculation);
   
-
-// navbar
+  // navbar
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
 });
+
+
   // mode 
   const body = document.body
   const icon = document.getElementById('icon')

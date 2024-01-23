@@ -7,8 +7,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #4203a9, #90bafc);
-  height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,10 +135,20 @@ h1 {
     background: black;
     color: white;
 }
-
+#calculate{
+    width: 140px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #fe9e09;
+    border: none;
+    cursor: pointer;
+}
 /* navbar */
 nav {
-  background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.3);
     display: flex;
     position: absolute;
     top: 0;
@@ -156,10 +166,9 @@ nav {
     padding: 1rem;
     list-style: none;
   }
-  .menu-title{
-    color: #fff;
+  .active{
+    color: #ffff76;
   }
-  
   nav ul li a {
     text-decoration: none;
     font-family: "poppins", sans-serif;
@@ -174,14 +183,13 @@ nav {
     color: #ffff76;
     border-bottom: 3px solid #ffff76;
   }
-  .active{
-    color: #ffff76;
+  .menu-title{
+    color: #fff;
   }
-  
   .menu-icon {
     /* background-color: tomato; */
-    color: white;
     font-size: 28px;
+    color: #fff;
     display: none;
   }
   
