@@ -9,51 +9,13 @@
   </head>
   <body>
     <div class="main">
-      <div class="calculator-container">
-        <div class="display-row">
-          <a class="show" id="showHistory"
-            ><i class="ph ph-clock-counter-clockwise"></i
-          ></a>
-          <p class="userInput" id="userInput">0</p>
-          <p class="inputAnswer" id="inputAnswer">0</p>
-        </div>
-        <div class="button-row">
-          <button id="clear">AC</button>
-          <button class="operator">%</button>
-          <button id="delete">DEL</button>
-          <button class="operator">÷</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="seven">7</button>
-          <button class="number" id="eight">8</button>
-          <button class="number" id="nine">9</button>
-          <button class="operator">*</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="four">4</button>
-          <button class="number" id="five">5</button>
-          <button class="number" id="six">6</button>
-          <button class="operator">-</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="one">1</button>
-          <button class="number" id="two">2</button>
-          <button class="number" id="three">3</button>
-          <button class="operator">+</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="doubleZero">00</button>
-          <button class="number" id="zero">0</button>
-          <button class="number" id="decimal">.</button>
-          <button id="calculate">=</button>
-        </div>
-      </div>
-      <!-- history -->
-      <div class="history">
-        <p>History :</p>
-        <ul></ul>
-      </div>
+      <h3>Helo, Welcome To My Calculator App</h3>
+      <h6>
+        Several calculators are available here, including simple, complex and
+        general calculators
+      </h6>
     </div>
+
     <!-- mode -->
     <div class="mode">
       <button id="darkMode">
@@ -71,7 +33,10 @@
       </div>
       <ul id="menu-list" class="hidden">
         <li>
-          <a href="index.html" class="active">V1 Calculator</a>
+          <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+          <a href="Components/v1-calculator/index.html">V1 Calculator</a>
         </li>
         <li>
           <a href="Components/v2-calculator/index.html">V2 Calculator</a>
@@ -83,8 +48,7 @@
     </nav>
 
     <!-- Script JS -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
     <script src="Assets/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </body>
 </html>

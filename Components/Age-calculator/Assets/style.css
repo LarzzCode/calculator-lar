@@ -30,7 +30,7 @@ body{
     align-items: center;
 }
 .input-box input{
-    flex: 5;
+    flex: 7;
     margin-right: 20px;
     padding: 14px 50px;
     border: 0;
@@ -148,6 +148,27 @@ nav {
   
     .menu-icon {
       display: flex;
+      align-items: center;
+    }
+    .calculator{
+      padding: 1.3rem;
+    }
+    .input-box input{
+      flex: 2;
+      background: #ffff76;
+      font-size: 12px;
+      padding: 5px 15px;
+    }
+    .input-box button{
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    .calculator p{
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding-top: 5px;
+      font-size: 14px;
       align-items: center;
     }
   }

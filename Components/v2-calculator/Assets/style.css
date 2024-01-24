@@ -224,13 +224,10 @@ nav {
       display: flex;
       align-items: center;
     }
-  }
-
-/* MOBILE screen */
-@media only screen and (max-width:768px){
     .calculator-container button, #special-func{
-        width: 50px;
-        height: 50px;
-        font-size: 18px;
-    }
-}
+      width: 55px;
+      height: 55px;
+      font-size: 18px;
+      margin: 5px;
+  }
+  }
