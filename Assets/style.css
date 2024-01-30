@@ -37,8 +37,9 @@
     z-index: 999999;
     top: 17px;
     right: 15px;
-}
+  }
 .mode button{
+  cursor: pointer;
     background: transparent;
     border: none;
 }
@@ -98,6 +99,8 @@ nav {
   .menu-icon {
     /* background-color: tomato; */
     color: white;
+    cursor: pointer;
+
     font-size: 28px;
     display: none;
   }

@@ -126,7 +126,10 @@ h1 {
 .mode button{
     background: transparent;
     border: none;
+  cursor: pointer;
+
 }
+
 .mode button img{
     height: 30px;
 }
@@ -178,6 +181,7 @@ nav {
   .menu-icon {
     /* background-color: tomato; */
     font-size: 28px;
+    cursor: pointer;
     display: none;
     color: #fff;
   }

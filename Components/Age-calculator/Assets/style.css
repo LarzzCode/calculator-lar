@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;   
+    flex-direction: column;
     height: 100vh;
 }
 .calculator p{
@@ -101,6 +102,7 @@ nav {
     /* background-color: tomato; */
     font-size: 28px;
     display: none;
+    cursor: pointer;
     color: #fff;
   }
   .menu-title{
@@ -115,6 +117,30 @@ nav {
 .mode button{
     background: transparent;
     border: none;
+  cursor: pointer;
+
+}
+
+.result-box{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
+.result-box .box{
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 60px;
+  width: 100px;
+  background-color:rgba(255,255,255,0.3);
+}
+.result-box .box span{
+  color: #ffff76;
 }
 .mode button img{
     height: 30px;
@@ -124,6 +150,18 @@ nav {
     background: black;
     color: white;
 }
+.result{
+  color:#fff;
+  display: none;
+  font-size: 30px;
+  font-style: italic;
+}
+.result span {
+  color: #ffff76;
+  font-size: 50px;
+}
+
+
   @media only screen and (max-width: 768px) {
     nav {
       flex-wrap: wrap;
@@ -153,9 +191,21 @@ nav {
     .calculator{
       padding: 1.3rem;
     }
+    .result-box{
+      display: none;
+    }
+    .result{
+      color:#fff;
+      display: block;
+      font-size: 15px;
+      font-style: italic;
+    }
+    .result span {
+      color: #ffff76;
+      font-size: 30px;
+    }
     .input-box input{
       flex: 2;
-      background: #ffff76;
       font-size: 12px;
       padding: 5px 15px;
     }

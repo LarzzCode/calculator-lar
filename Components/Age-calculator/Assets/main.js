@@ -1,6 +1,14 @@
 const userInput = document.getElementById('date')
 userInput.max =  new Date().toISOString().split('T')[0]
-let result = document.getElementById('result')
+
+const years = document.getElementById('years')
+const months = document.getElementById('months')
+const days = document.getElementById('days')
+
+
+const year = document.getElementById('year')
+const month = document.getElementById('month')
+const day = document.getElementById('day')
 
 function calculate(){
     let birthDay = new Date(userInput.value)
@@ -31,14 +39,22 @@ function calculate(){
     }else{
         m3 -- 
         d3 = getDaysInMonth(y1, m1) + d2 - d1
+        alert("Please enter your age")
     }
     if(m3 < 0){
         m3 = 11
         y3--
     }
 
-    result.innerHTML = `You are ${y3} years, ${m3} month, ${d3} days`
-}
+
+    years.innerHTML = ' '  + y3
+    months.innerHTML =' ' +  m3
+    days.innerHTML = ' ' + d3
+
+    year.innerHTML = ' '  + y3
+    month.innerHTML =' ' +  m3
+    day.innerHTML = ' ' + d3
+  }
 
     function getDaysInMonth(year, month){
         return new Date( year, month, 0).getDate()

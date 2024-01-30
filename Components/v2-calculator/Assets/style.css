@@ -142,6 +142,8 @@ h1 {
 .mode button{
     background: transparent;
     border: none;
+  cursor: pointer;
+
 }
 .mode button img{
     height: 30px;
@@ -195,6 +197,8 @@ nav {
     /* background-color: tomato; */
     font-size: 28px;
     color: #fff;
+    cursor: pointer;
+
     display: none;
   }
   
