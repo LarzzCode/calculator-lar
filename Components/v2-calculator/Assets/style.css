@@ -133,7 +133,7 @@ h1 {
     position: absolute;
     top: 15px;
     left: 15px;
-    z-index: 99999;
+    z-index: 1;
 }
 .mode{
     position: fixed;
@@ -239,6 +239,7 @@ nav {
       position: fixed;
       width: 100%;
       top: 0;
+      z-index: 999;
       padding: 1rem;
     }
   
@@ -264,5 +265,8 @@ nav {
       height: 55px;
       font-size: 18px;
       margin: 5px;
+  }
+  .footer-top{
+    flex-direction: column;
   }
   }

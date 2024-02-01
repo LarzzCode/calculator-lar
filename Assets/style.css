@@ -164,4 +164,7 @@ nav {
       display: flex;
       align-items: center;
     }
+    .footer-top{
+      flex-direction: column;
+    }
   }
