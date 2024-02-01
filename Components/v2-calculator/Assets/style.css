@@ -8,11 +8,13 @@
 
 body {
     background: linear-gradient(135deg, #4203a9, #90bafc);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -200,6 +202,35 @@ nav {
     cursor: pointer;
 
     display: none;
+  }
+  footer{
+    font-family: 'poppins';
+    font-size: 12px;
+    color: #fff;
+    align-items: center;
+    background:rgba(255,255,255,0.3);
+  }
+  .footer-cr{
+    text-align: center;
+    padding: 5px;
+  }
+  .footer-top{
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-title{
+    text-align: center;
+    border-bottom: 1px solid #ffff76;
+    color: #ffff76;
+  }
+  .footer-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-item a{
+    color: #fff;
+    text-decoration: underline;
   }
   
   @media only screen and (max-width: 768px) {

@@ -4,66 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="icon" href="Assets/icons/math-operations.svg" />
     <link rel="stylesheet" href="Assets/style.css" />
   </head>
   <body>
-    <div class="main">
-      <h3>Hello, Welcome To LC <br />< Lar Calculator /></h3>
-      <h6>
-        Several calculators are available here, including simple, complex and
-        general calculators
-      </h6>
+    <div class="container">
+      <div class="main">
+        <h3>Hello, Welcome To LC <br />< Lar Calculator /></h3>
+        <h6>
+          Several calculators are available here, including simple, complex and
+          general calculators
+        </h6>
+      </div>
+
+      <!-- mode -->
+      <div class="mode">
+        <button id="darkMode">
+          <img id="icon" src="Assets/icons/moon.svg" alt="moon/sun" />
+        </button>
+      </div>
+
+      <!-- nav bar  -->
+      <nav>
+        <div class="menu-title">
+          <h3>L C</h3>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="Components/v1-calculator/index.html">V1 Calculator</a>
+          </li>
+          <li>
+            <a href="Components/v2-calculator/index.html">V2 Calculator</a>
+          </li>
+          <li>
+            <a href="Components/Age-calculator/index.html">Age Calculator</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <!-- mode -->
-    <div class="mode">
-      <button id="darkMode">
-        <img id="icon" src="Assets/icons/moon.svg" alt="moon/sun" />
-      </button>
-    </div>
-
-    <!-- nav bar  -->
-    <nav>
-      <div class="menu-title">
-        <h3>L C</h3>
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer">
+          <div class="footer-title">
+            <b>Contact Me</b>
+          </div>
+          <div class="footer-item">
+            <p>
+              <i class="ph ph-envelope-simple"></i> wahidityagilar6@gmail.com
+            </p>
+            <p><i class="ph ph-phone"></i> +62 83842581283</p>
+            <p><i class="ph ph-github-logo"></i> LarzzCode</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-title">
+            <b>Site Link </b>
+          </div>
+          <div class="footer-item">
+            <a href="Components/v1-calculator/index.html">V1 Calculator</a>
+            <a href="Components/v2-calculator/index.html">V2 Calculator</a>
+            <a href="Components/Age-calculator/index.html">Age Calculator</a>
+          </div>
+        </div>
       </div>
-      <div id="menu-icon" class="menu-icon">
-        <i class="ph ph-list"></i>
+      <hr />
+      <div class="footer-cr">
+        <i>&copy; Copyright Gilar Wahiditya Ekaputra</i>
       </div>
-      <ul id="menu-list" class="hidden">
-        <li>
-          <a href="index.html" class="active">Home</a>
-        </li>
-        <li>
-          <a href="Components/v1-calculator/index.html">V1 Calculator</a>
-        </li>
-        <li>
-          <a href="Components/v2-calculator/index.html">V2 Calculator</a>
-        </li>
-        <li>
-          <a href="Components/Age-calculator/index.html">Age Calculator</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!--animation -->
-    <section class="boxx">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </section>
+    </footer>
     <!-- Script JS -->
     <script src="Assets/main.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>

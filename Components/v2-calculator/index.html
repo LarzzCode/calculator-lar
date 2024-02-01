@@ -4,92 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="icon" href="Assets/icons/math-operations.svg" />
     <link rel="stylesheet" href="Assets/style.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="calculator-container">
-        <div class="display-row">
-          <a class="show" id="showHistory"
-            ><i class="ph ph-clock-counter-clockwise"></i
-          ></a>
-          <p class="userInput" id="userInput">0</p>
-          <p class="inputAnswer" id="inputAnswer">0</p>
+    <div class="container">
+      <div class="main">
+        <div class="calculator-container">
+          <div class="display-row">
+            <a class="show" id="showHistory"
+              ><i class="ph ph-clock-counter-clockwise"></i
+            ></a>
+            <p class="userInput" id="userInput">0</p>
+            <p class="inputAnswer" id="inputAnswer">0</p>
+          </div>
+          <div class="button-row">
+            <button id="clear">AC</button>
+            <button id="delete">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">÷</button>
+          </div>
+          <div class="button-row">
+            <button id="special-func" class="operator">sin</button>
+            <button id="special-func" class="operator">cos</button>
+            <button id="special-func" class="operator">tan</button>
+            <button id="special-func" class="operator">log</button>
+          </div>
+          <div class="button-row">
+            <button class="number" id="seven">7</button>
+            <button class="number" id="eight">8</button>
+            <button class="number" id="nine">9</button>
+            <button class="operator">*</button>
+          </div>
+          <div class="button-row">
+            <button class="number" id="four">4</button>
+            <button class="number" id="five">5</button>
+            <button class="number" id="six">6</button>
+            <button class="operator">-</button>
+          </div>
+          <div class="button-row">
+            <button class="number" id="one">1</button>
+            <button class="number" id="two">2</button>
+            <button class="number" id="three">3</button>
+            <button class="operator">+</button>
+          </div>
+          <div class="button-row">
+            <button class="number" id="decimal">.</button>
+            <button class="number" id="zero">0</button>
+            <button class="number" id="doubleZero">00</button>
+            <button id="calculate">=</button>
+          </div>
         </div>
-        <div class="button-row">
-          <button id="clear">AC</button>
-          <button id="delete">DEL</button>
-          <button class="operator">%</button>
-          <button class="operator">÷</button>
-        </div>
-        <div class="button-row">
-          <button id="special-func" class="operator">sin</button>
-          <button id="special-func" class="operator">cos</button>
-          <button id="special-func" class="operator">tan</button>
-          <button id="special-func" class="operator">log</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="seven">7</button>
-          <button class="number" id="eight">8</button>
-          <button class="number" id="nine">9</button>
-          <button class="operator">*</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="four">4</button>
-          <button class="number" id="five">5</button>
-          <button class="number" id="six">6</button>
-          <button class="operator">-</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="one">1</button>
-          <button class="number" id="two">2</button>
-          <button class="number" id="three">3</button>
-          <button class="operator">+</button>
-        </div>
-        <div class="button-row">
-          <button class="number" id="decimal">.</button>
-          <button class="number" id="zero">0</button>
-          <button class="number" id="doubleZero">00</button>
-          <button id="calculate">=</button>
+        <!-- history -->
+        <div class="history">
+          <p>History :</p>
+          <ul></ul>
         </div>
       </div>
-      <!-- history -->
-      <div class="history">
-        <p>History :</p>
-        <ul></ul>
+      <!-- mode -->
+      <div class="mode">
+        <button id="darkMode">
+          <img id="icon" src="Assets/icons/moon.svg" alt="moon/sun" />
+        </button>
       </div>
-    </div>
-    <!-- mode -->
-    <div class="mode">
-      <button id="darkMode">
-        <img id="icon" src="Assets/icons/moon.svg" alt="moon/sun" />
-      </button>
-    </div>
 
-    <!-- nav bar  -->
-    <nav>
-      <div class="menu-title">
-        <h3>L C</h3>
+      <!-- nav bar  -->
+      <nav>
+        <div class="menu-title">
+          <h3>L C</h3>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="../v1-calculator/index.html">V1 Calculator</a>
+          </li>
+          <li>
+            <a href="index.html" class="active">V2 Calculator</a>
+          </li>
+          <li>
+            <a href="../Age-calculator/index.html">Age Calculator</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer">
+          <div class="footer-title">
+            <b>Contact Me</b>
+          </div>
+          <div class="footer-item">
+            <p>
+              <i class="ph ph-envelope-simple"></i> wahidityagilar6@gmail.com
+            </p>
+            <p><i class="ph ph-phone"></i> +62 83842581283</p>
+            <p><i class="ph ph-github-logo"></i> LarzzCode</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-title">
+            <b>Site Link </b>
+          </div>
+          <div class="footer-item">
+            <a href="../v1-calculator/index.html">V1 Calculator</a>
+            <a href="index.html">V2 Calculator</a>
+            <a href="../Age-calculator/index.html">Age Calculator</a>
+          </div>
+        </div>
       </div>
-      <div id="menu-icon" class="menu-icon">
-        <i class="ph ph-list"></i>
+      <hr />
+      <div class="footer-cr">
+        <i>&copy; Copyright Gilar Wahiditya Ekaputra</i>
       </div>
-      <ul id="menu-list" class="hidden">
-        <li>
-          <a href="../../index.html">Home</a>
-        </li>
-        <li>
-          <a href="../v1-calculator/index.html">V1 Calculator</a>
-        </li>
-        <li>
-          <a href="index.html" class="active">V2 Calculator</a>
-        </li>
-        <li>
-          <a href="../Age-calculator/index.html">Age Calculator</a>
-        </li>
-      </ul>
-    </nav>
-
+    </footer>
     <!-- Script JS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
