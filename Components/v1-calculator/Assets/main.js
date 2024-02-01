@@ -7,6 +7,7 @@ const deleteInputs = document.getElementById("delete");
 const historyArea = document.querySelector(".history");
 const mainArea = document.querySelector(".calculator-container");
 
+
 historyArea.style.display = "none";
 
 function displayHistory() {
@@ -23,6 +24,7 @@ document
   .addEventListener("click", displayHistory);
 
 const history = [];
+
 
 function addToHistory(entry) {
   history.push(entry);

@@ -39,7 +39,6 @@ function calculate(){
     }else{
         m3 -- 
         d3 = getDaysInMonth(y1, m1) + d2 - d1
-        alert("Please enter your age")
     }
     if(m3 < 0){
         m3 = 11
