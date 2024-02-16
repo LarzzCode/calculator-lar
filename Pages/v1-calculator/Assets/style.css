@@ -7,14 +7,15 @@
 }
 
 body {
-    background: linear-gradient(135deg, #4203a9, #90bafc);
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  
 }
 .container{
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -34,7 +35,6 @@ h1 {
 
 .calculator-container {
     flex: 1;
-   
     box-sizing: border-box;
     border: 2px solid;
     padding: 25px;
@@ -54,18 +54,14 @@ h1 {
     cursor: pointer;
 }
 .calculator-container .number:hover{
-  background-color: #979797;
-  
-}
-#special-func:hover{
-  background-color: #c7c6c6;
-
+    background-color: #979797;
+    
 }
 .calculator-container button:hover {
     background-color:#ffc366;
 }
+
 .display-row {
-  
     height: 90px;
     max-height: 130px;
     text-align: right;
@@ -85,17 +81,6 @@ h1 {
 
 .display-row .inputAnswer {
     font-size: 40px;
-}
-#special-func{
-  width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    font-size: 25px;
-    margin: 3px;
-    color: rgb(0, 0, 0);
-    background-color: #dad9d8;
-    border: none;
-    cursor: pointer;
 }
 
 .calculator-container .number {
@@ -117,6 +102,11 @@ h1 {
     border-radius: 10px;
     float: left;
 }
+#clearAll{
+  position: absolute;
+  top:1px;
+  right:1px;
+}
 .history p{
     margin-top: 40px;
 }
@@ -135,29 +125,9 @@ h1 {
     left: 15px;
     z-index: 1;
 }
-.mode{
-    position: fixed;
-    z-index: 999999;
-    top: 17px;
-    right: 15px;
-}
-.mode button{
-    background: transparent;
-    border: none;
-  cursor: pointer;
-
-}
-.mode button img{
-    height: 30px;
-}
-/* MODE  */
-.darkMode{
-    background: black;
-    color: white;
-}
 /* navbar */
 nav {
-    background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.3);
     display: flex;
     position: absolute;
     top: 0;
@@ -175,9 +145,7 @@ nav {
     padding: 1rem;
     list-style: none;
   }
-  .active{
-    color: #ffff76;
-  }
+  
   nav ul li a {
     text-decoration: none;
     font-family: "poppins", sans-serif;
@@ -187,7 +155,9 @@ nav {
     transition-duration: 300ms;
     border-bottom: 3px solid rgba(255, 68, 0, 0);
   }
-  
+  .active{
+    color: #ffff76;
+  }
   nav ul li a:hover {
     color: #ffff76;
     border-bottom: 3px solid #ffff76;
@@ -198,15 +168,15 @@ nav {
   .menu-icon {
     /* background-color: tomato; */
     font-size: 28px;
-    color: #fff;
     cursor: pointer;
-
     display: none;
+    color: #fff;
   }
   footer{
     font-family: 'poppins';
     font-size: 12px;
     color: #fff;
+  border-top: 1px solid #ffff76;
     align-items: center;
     background:rgba(255,255,255,0.3);
   }
@@ -221,7 +191,6 @@ nav {
   }
   .footer-title{
     text-align: center;
-    border-bottom: 1px solid #ffff76;
     color: #ffff76;
   }
   .footer-item{
@@ -239,7 +208,7 @@ nav {
       position: fixed;
       width: 100%;
       top: 0;
-      z-index: 999;
+      z-index: 9999;
       padding: 1rem;
     }
   
@@ -260,7 +229,7 @@ nav {
       display: flex;
       align-items: center;
     }
-    .calculator-container button, #special-func{
+    .calculator-container button{
       width: 55px;
       height: 55px;
       font-size: 18px;
@@ -270,3 +239,5 @@ nav {
     flex-direction: column;
   }
   }
+
+

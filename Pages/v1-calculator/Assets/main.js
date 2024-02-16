@@ -4,11 +4,10 @@ const inputAnswer = document.querySelector(".inputAnswer");
 const userInput = document.querySelector(".userInput");
 const clear = document.getElementById("clear");
 const deleteInputs = document.getElementById("delete");
+const clearAll = document.getElementById("clearAll");
 const historyArea = document.querySelector(".history");
 const mainArea = document.querySelector(".calculator-container");
 
-
-historyArea.style.display = "none";
 
 function displayHistory() {
   if (historyArea.style.display === "none") {
@@ -20,10 +19,13 @@ function displayHistory() {
 }
 
 document
-  .getElementById("showHistory")
-  .addEventListener("click", displayHistory);
+.getElementById("showHistory")
+.addEventListener("click", displayHistory);
 
-const history = [];
+let history = [];
+
+historyArea.style.display = "none";
+
 
 
 function addToHistory(entry) {
@@ -33,6 +35,21 @@ function addToHistory(entry) {
   const newHistoryItem = document.createElement("li");
   newHistoryItem.textContent = entry;
   historyList.appendChild(newHistoryItem);
+
+  
+clearAll.addEventListener('click', () => {
+  let userAcc = confirm("Are you sure ?")
+  if (userAcc) {
+    history.length = 0;
+    history.splice(0, history.length);
+  
+    newHistoryItem.textContent = history;
+  }else{
+
+  }
+
+
+})
 }
 
 let operand1 = null;
@@ -158,16 +175,4 @@ menuIcon.addEventListener("click", () => {
 });
 
 
-  // mode 
-  const body = document.body
-  const icon = document.getElementById('icon')
-  icon.addEventListener('click', () => {
-    body.classList.toggle('darkMode')
-
-    if(body.classList.contains('darkMode')){
-      icon.src = "Assets/icons/sun-light.svg"
-    }else {
-      icon.src = "Assets/icons/moon.svg"
-    }
-  
-  })
+console.log(history);

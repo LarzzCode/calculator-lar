@@ -1,21 +1,35 @@
 
-// navbar
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
 });
-  // mode 
-  const body = document.body
-  const icon = document.getElementById('icon')
-  icon.addEventListener('click', () => {
-    body.classList.toggle('darkMode')
 
-    if(body.classList.contains('darkMode')){
-      icon.src = "Assets/icons/sun-light.svg"
-    }else {
-      icon.src = "Assets/icons/moon.svg"
+
+  // slider
+let currentSlide = 0;
+
+function startSlider() {
+  let imageCount = document.querySelectorAll("img");
+  let images = document.querySelector("ul");
+
+  if (imageCount.length === 2) {
+    imageCount = document.querySelectorAll("img");
+    images.style.transform = `translateX(0px)`;
+    return
+  }
+
+  images.style.transform = `translateX(-${currentSlide * 550}px)`;
+  if (currentSlide === imageCount.length - 0) {
+    currentSlide = 0;
+    images.style.transform = `translateX(${currentSlide * 550}px)`;
+  } else {
+      currentSlide++;
     }
-  
-  })
+
+}
+
+setInterval(() => {
+  startSlider();
+}, 1000);

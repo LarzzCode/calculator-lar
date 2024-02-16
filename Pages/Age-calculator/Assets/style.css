@@ -142,14 +142,7 @@ nav {
 .result-box .box span{
   color: #ffff76;
 }
-.mode button img{
-    height: 30px;
-}
-/* MODE  */
-.darkMode{
-    background: black;
-    color: white;
-}
+
 .result{
   color:#fff;
   display: none;
@@ -163,6 +156,7 @@ nav {
 footer{
   font-family: 'poppins';
   font-size: 12px;
+  border-top: 1px solid #ffff76;
   color: #fff;
   align-items: center;
   background:rgba(255,255,255,0.3);
@@ -178,7 +172,6 @@ footer{
 }
 .footer-title{
   text-align: center;
-  border-bottom: 1px solid #ffff76;
   color: #ffff76;
 }
 .footer-item{
