@@ -86,6 +86,7 @@ h1 {
 .display-row .userInput {
     visibility: hidden;
     font-size: 22px;
+
 }
 
 .display-row .inputAnswer {
@@ -136,7 +137,7 @@ h1 {
 .show i{
     font-size: 20pt;
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 15px;
     z-index: 1;
 }
@@ -217,6 +218,9 @@ nav {
   .footer-item a{
     color: #fff;
     text-decoration: underline;
+  }
+  #clearAll{
+    display: none;
   }
   
   @media only screen and (max-width: 768px) {

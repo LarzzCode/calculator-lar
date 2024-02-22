@@ -23,26 +23,29 @@ document
   .getElementById("showHistory")
   .addEventListener("click", displayHistory);
 
-const history = [];
+  let history = [];
 
-function addToHistory(entry) {
-  history.push(entry);
-
-  const historyList = document.querySelector(".history ul");
-  const newHistoryItem = document.createElement("li");
-  newHistoryItem.textContent = entry;
-  historyList.appendChild(newHistoryItem);
+  historyArea.style.display = "none";
   
+  let historyList = document.querySelector(".history ul");
   
-clearAll.addEventListener('click', () => {
-  let userAcc = confirm("Are you sure ?")
-  if (userAcc) {
-    history.length = 0;
-    history.splice(0, history.length);
+  function addToHistory(entry) {
+    history.push(entry);
+    let newHistoryItem = document.createElement("li");
+    newHistoryItem.textContent = entry;
+    historyList.appendChild(newHistoryItem);
+    clearAll.style.display = 'block'
+  }
   
-    newHistoryItem.textContent = history;
-  }else{}
-})}
+  clearAll.addEventListener('click', () => {
+    const userClick = confirm('Are you sure?')
+    if (userClick) {
+      historyList.textContent = '';
+      clearAll.style.display = 'none'
+  
+      }
+  })
+  
 
 let operand1 = null;
 let operator = null;

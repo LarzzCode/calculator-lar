@@ -32,4 +32,4 @@ function startSlider() {
 
 setInterval(() => {
   startSlider();
-}, 1000);
+}, 3000);
