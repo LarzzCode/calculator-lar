@@ -221,6 +221,10 @@ nav {
   }
   #clearAll{
     display: none;
+    cursor: pointer;
+    position: absolute;
+    top:1px;
+    right:1px;
   }
   
   @media only screen and (max-width: 768px) {
@@ -251,10 +255,10 @@ nav {
       align-items: center;
     }
     .calculator-container button, #special-func{
-      width: 55px;
-      height: 55px;
+      width: 60px;
+      height: 60px;
       font-size: 18px;
-      margin: 5px;
+      margin: 3px;
   }
   .footer-top{
     flex-direction: column;

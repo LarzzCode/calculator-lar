@@ -9,6 +9,7 @@
 body {
   background: linear-gradient(135deg, #4203a9, #90bafc);
   
+  
 }
 .container{
   height: 100vh;
@@ -103,6 +104,8 @@ h1 {
     float: left;
 }
 #clearAll{
+  display: none;
+  cursor: pointer;
   position: absolute;
   top:1px;
   right:1px;
@@ -151,7 +154,7 @@ nav {
     font-family: "poppins", sans-serif;
     color: #fff;
     padding: 8px 0;
-    transition: all;
+    transition: all ease-in-out .5s;
     transition-duration: 300ms;
     border-bottom: 3px solid rgba(255, 68, 0, 0);
   }
@@ -232,10 +235,11 @@ nav {
       align-items: center;
     }
     .calculator-container button{
-      width: 55px;
-      height: 55px;
+      width: 60px;
+      height: 60px;
       font-size: 18px;
-      margin: 5px;
+      margin: 3px;
+
   }
   .footer-top{
     flex-direction: column;
