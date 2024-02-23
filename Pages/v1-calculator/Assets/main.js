@@ -9,6 +9,7 @@ const historyArea = document.querySelector(".history");
 const mainArea = document.querySelector(".calculator-container");
 
 
+
 function displayHistory() {
   if (historyArea.style.display === "none") {
     historyArea.style.display = "";
@@ -49,13 +50,20 @@ clearAll.addEventListener('click', () => {
 let operand1 = null;
 let operator = null;
 
+
+
 function displayNumber(event) {
   const clickedNumber = event.target;
   const inputValue = inputAnswer.textContent;
 
+  if (inputValue.length >= 10) {
+    alert('sorry you have reached the max number')
+    return
+  }
+
   if (inputValue === "0") {
     inputAnswer.textContent = clickedNumber.textContent;
-  } else {
+  }else {
     inputAnswer.textContent += clickedNumber.textContent;
   }
 }
@@ -134,7 +142,6 @@ function performCalculation() {
     }
 
     userInput.textContent = operand1 + " " + operator + " " + inputValue + " = ";
- 
     const historyEntry = `${userInput.textContent} ${inputAnswer.textContent}`;
     addToHistory(historyEntry);
 

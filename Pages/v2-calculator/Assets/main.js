@@ -54,6 +54,12 @@ function displayNumber(event) {
   const clickedNumber = event.target;
   const inputValue = inputAnswer.textContent;
 
+  
+  if (inputValue.length >= 10) {
+    alert('sorry you have reached the max number')
+    return
+  }
+
   if (inputValue === "0") {
     inputAnswer.textContent = clickedNumber.textContent;
   } else {
