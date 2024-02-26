@@ -55,7 +55,7 @@ function displayNumber(event) {
   const inputValue = inputAnswer.textContent;
 
   
-  if (inputValue.length >= 10) {
+  if (inputValue.length >= 7) {
     alert('sorry you have reached the max number')
     return
   }

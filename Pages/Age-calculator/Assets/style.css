@@ -67,9 +67,7 @@ nav {
     justify-content: space-around;    
   }
 
-  .active{
-    color: #ffff76;
-  }
+  
   nav ul {
     padding: 1rem;
     display: flex;
@@ -93,7 +91,21 @@ nav {
     border-bottom: 3px solid rgba(255, 68, 0, 0);
   }
   
-  nav ul li a:hover {
+  nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 7px;
+    color: #ffff76;
+    transition: width .3s;
+    border-bottom: 3px solid #ffff76;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+  .active{
     color: #ffff76;
     border-bottom: 3px solid #ffff76;
   }
