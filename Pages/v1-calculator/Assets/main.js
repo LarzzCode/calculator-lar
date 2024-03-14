@@ -56,7 +56,7 @@ function displayNumber(event) {
   const clickedNumber = event.target;
   const inputValue = inputAnswer.textContent;
 
-  if (inputValue.length >= 7) {
+  if (inputValue.length >= 9) {
     alert('sorry you have reached the max number')
     return
   }
