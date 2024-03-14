@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
 * {
     margin: 0;
@@ -21,14 +21,13 @@
   }
   .main h6{
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     
   }
   .main {
     display: flex;
     font-size: 20px;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
     color: #fff;    
     position: relative;
@@ -124,6 +123,29 @@ nav {
     font-size: 28px;
     display: none;
   }
+/* about  */
+#about .header-about h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding:10px;
+  color:#fff;
+  text-align:center;
+}
+#about .body-about{
+  padding: 1.3em;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+#about .body-about .bold{
+  font-weight:500;
+}
+#about .body-about h5{
+  font-weight: 300;
+  line-height: 25px;
+}
+#about .body-about h5 a {
+  color: #fff;
+}
   footer{
     font-family: 'poppins';
     font-size: 12px;
@@ -157,7 +179,7 @@ nav {
   
   @media only screen and (max-width: 768px) {
     .main{
-      font-size: 20px;
+      font-size: 18px;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -186,6 +208,8 @@ nav {
     nav ul li:last-of-type {
       padding-bottom: 8px;
     }
+
+
   
     nav ul.hidden {
       display: none;
