@@ -60,6 +60,8 @@ nav {
   background-color: rgba(255,255,255,0.3);
     display: flex;
     position: absolute;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     top: 0;
     align-items: center;
     width: 100%;
@@ -107,7 +109,6 @@ nav {
   }
   .active{
     color: #ffff76;
-    border-bottom: 3px solid #ffff76;
   }
   
   .menu-icon {
@@ -117,8 +118,9 @@ nav {
     cursor: pointer;
     color: #fff;
   }
-  .menu-title{
+  .menu-title h3 a{
     color: #fff;
+    text-decoration: none;
   }
   .mode{
     position: fixed;

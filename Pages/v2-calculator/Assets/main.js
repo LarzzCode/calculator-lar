@@ -151,7 +151,7 @@ function performCalculation() {
     } else {
       inputAnswer.textContent = result.toFixed(11);
     }
-
+    
     userInput.textContent = operand1 + " " + operator + " " + inputValue + " = ";
  
     const historyEntry = `${userInput.textContent} ${inputAnswer.textContent}`;
