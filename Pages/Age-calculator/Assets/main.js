@@ -6,6 +6,7 @@ const days = document.getElementById('days')
 const year = document.getElementById('year')
 const month = document.getElementById('month')
 const day = document.getElementById('day')
+
 function calculate(){
     let birthDay = new Date(userInput.value)
     let d1 = birthDay.getDate()
@@ -33,12 +34,29 @@ function calculate(){
         m3 = 11
         y3--
     }
-    years.innerHTML = ' '  + y3
-    months.innerHTML =' ' +  m3
-    days.innerHTML = ' ' + d3
-    year.innerHTML = ' '  + y3
-    month.innerHTML =' ' +  m3
-    day.innerHTML = ' ' + d3
+
+    
+    function result (){
+        years.innerHTML = ' '  + y3
+        months.innerHTML =' ' +  m3
+        days.innerHTML = ' ' + d3
+        year.innerHTML = ' '  + y3
+        month.innerHTML =' ' +  m3
+        day.innerHTML = ' ' + d3
+    } 
+
+    const Loading = setTimeout(result, 1000)
+
+    if (Loading) {
+        years.innerHTML = 'Memuat...' 
+        months.innerHTML ='Memuat...'
+        days.innerHTML = 'Memuat...'
+        year.innerHTML = 'Memuat...'  
+        month.innerHTML ='Memuat...' 
+        day.innerHTML = 'Memuat...' 
+    }
+
+
   }
     function getDaysInMonth(year, month){
         return new Date( year, month, 0).getDate()
