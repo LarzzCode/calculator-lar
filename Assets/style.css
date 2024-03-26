@@ -125,6 +125,22 @@ nav {
     font-size: 28px;
     display: none;
   }
+
+  .translate-icon{
+    position: fixed;
+    right: 5px;
+    cursor: pointer;
+    bottom: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 100%;
+    color: black;
+    font-size: 30px;
+    background:#ffff76;
+  }
 /* about  */
 #about .header-about h3{
   font-family: 'Poppins', sans-serif;
@@ -145,7 +161,7 @@ nav {
   font-weight: 300;
   line-height: 25px;
 }
-#about .body-about h5 a {
+#about .body-about a {
   color: #fff;
 }
   footer{
