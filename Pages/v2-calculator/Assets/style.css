@@ -52,6 +52,12 @@ color: #fff;
   border: none;
   cursor: pointer;
 }
+.menu-title {
+  display: flex;
+  
+  gap: 10px;
+  align-items: center;
+}
 .calculator-container .number:hover{
   background-color: rgba(255, 255, 255, 0.199);
   

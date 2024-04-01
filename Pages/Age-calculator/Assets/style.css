@@ -40,6 +40,12 @@ body{
     border-radius: 5px;
     position: relative;
 }
+.menu-title {
+  display: flex;
+  
+  gap: 10px;
+  align-items: center;
+}
 .input-box button{
     flex: 1;
     padding: 14px 10px;
