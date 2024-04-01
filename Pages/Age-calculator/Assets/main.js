@@ -35,7 +35,6 @@ function calculate(){
         y3--
     }
 
-    
     function result (){
         years.innerHTML = ' '  + y3
         months.innerHTML =' ' +  m3
@@ -48,14 +47,13 @@ function calculate(){
     const Loading = setTimeout(result, 1000)
 
     if (Loading) {
-        years.innerHTML = 'Memuat...' 
+        years.innerHTML = 
         months.innerHTML ='Memuat...'
         days.innerHTML = 'Memuat...'
         year.innerHTML = 'Memuat...'  
         month.innerHTML ='Memuat...' 
         day.innerHTML = 'Memuat...' 
     }
-
 
   }
     function getDaysInMonth(year, month){
