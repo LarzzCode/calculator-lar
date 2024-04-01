@@ -32,28 +32,34 @@ h1 {
 }
 
 .calculator-container {
-    box-sizing: border-box;
-    border: 2px solid;
-    padding: 25px;
-    border-radius: 10px;
-    background-color: rgb(20, 20, 20);
+  flex: 1;
+  box-sizing: border-box;
+  border: 2px solid rgba(255,255,255,0.3);
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.3);
 }
-
+.number{
+color: #fff;
+}
 .calculator-container button {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    font-size: 25px;
-    margin: 3px;
-    color: rgb(255, 255, 255);
-    background-color: #fe9e09;
-    border: none;
-    cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  font-size: 25px;
+  margin: 3px;
+  background-color: #ffff76;
+  border: none;
+  cursor: pointer;
 }
 .calculator-container .number:hover{
-  background-color: #979797;
+  background-color: rgba(255, 255, 255, 0.199);
   
 }
+.calculator-container button:hover {
+  background-color: rgba(255, 255, 118, 0.842)
+}
+
 #clearAll{
   position: absolute;
   top:1px;
@@ -62,9 +68,6 @@ h1 {
 #special-func:hover{
   background-color: #c7c6c6;
 
-}
-.calculator-container button:hover {
-    background-color:#ffc366;
 }
 .display-row {
   
@@ -89,25 +92,16 @@ h1 {
 .display-row .inputAnswer {
     font-size: 40px;
 }
-#special-func{
-  width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    font-size: 25px;
-    margin: 3px;
-    color: rgb(0, 0, 0);
-    background-color: #dad9d8;
-    border: none;
-    cursor: pointer;
-}
 
 .calculator-container .number {
-    background-color: rgb(100, 100, 100);
+    background-color: rgba(255,255,255,0.3);
 }
 
 .history {
     box-sizing: border-box;
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     color: rgb(255, 255, 255);
     font-size: 25px;
     position: absolute;

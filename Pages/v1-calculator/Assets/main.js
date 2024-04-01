@@ -38,7 +38,7 @@ function addToHistory(entry) {
 }
 
 clearAll.addEventListener('click', () => {
-  const userClick = confirm('Are you sure?')
+  const userClick = confirm('Apakah Kamu Yakin ?')
   if (userClick) {
     historyList.textContent = '';
     clearAll.style.display = 'none'
@@ -57,7 +57,7 @@ function displayNumber(event) {
   const inputValue = inputAnswer.textContent;
 
   if (inputValue.length >= 9) {
-    alert('sorry you have reached the max number')
+    alert('Maaf anda telah mencapai angka maksimal')
     return
   }
 
@@ -135,7 +135,7 @@ function performCalculation() {
         break;
     }
 
-    if (result % 1 === 0) {
+    if (result % 1 == 0) {
       inputAnswer.textContent = result.toFixed(0);
     } else {
       inputAnswer.textContent = result.toFixed(2);

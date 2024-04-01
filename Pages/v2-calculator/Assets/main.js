@@ -38,7 +38,7 @@ document
   }
   
   clearAll.addEventListener('click', () => {
-    const userClick = confirm('Are you sure?')
+    const userClick = confirm('Apakah Kamu Yakin ?')
     if (userClick) {
       historyList.textContent = '';
       clearAll.style.display = 'none'
@@ -56,7 +56,7 @@ function displayNumber(event) {
 
   
   if (inputValue.length >= 9) {
-    alert('sorry you have reached the max number')
+    alert('Maaf anda telah mencapai angka maksimal')
     return
   }
 
