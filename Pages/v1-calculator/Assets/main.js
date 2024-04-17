@@ -42,7 +42,6 @@ clearAll.addEventListener('click', () => {
   if (userClick) {
     historyList.textContent = '';
     clearAll.style.display = 'none'
-
     }
 })
 
@@ -75,7 +74,7 @@ function displayDoubleZero(event) {
   const clickedNumber = event.target;
   const inputValue = inputAnswer.textContent;
 
-  if (inputValue > 0) {
+  if (inputValue > 1) {
     inputValue.textContent += clickedNumber.textContent;
   } else {
     inputAnswer.textContent = 0;
@@ -159,8 +158,6 @@ operators.forEach(operatorButton => {
     userInput.textContent = operand1 + " " + operator;
     inputAnswer.textContent = "0";
   });
- 
-
 });
 
 document
@@ -174,4 +171,3 @@ const menuList = document.getElementById("menu-list");
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
 });
-
