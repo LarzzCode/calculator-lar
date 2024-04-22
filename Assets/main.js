@@ -32,3 +32,11 @@ function startSlider() {
 setInterval(() => {
   startSlider();
 }, 1500);
+
+
+
+var typed = new Typed('#typeText', {
+  strings: ['Kalkulator Sederhana,', 'Kalkulator Kompleks, dan', 'Kalkulator Umur.'],
+  typeSpeed: 70,
+  loop: true
+});
